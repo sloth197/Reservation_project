@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form action="login" method="post">
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" name="ID">
+            
+            <label for="PW">PW:</label>
+            <input type="text" id="PW" name="PW">
+            
+            <button type="submit">Login</button>
+            <button type="button" onclick="signup()">회원가입</button>
+            <button type="button" onclick="kakao()">카카오 로그인</button>
+        </form>
+        <div class="footer">Copyright</div>
+    </div>
+
+    <script>
+        function signup() {
+            alert("회원가입 버튼 클릭")
+        }
+        function kakao() {
+            alert("카카오 로그인 버튼 클릭")
+        }
+    </script>
+</body>
+</html>
