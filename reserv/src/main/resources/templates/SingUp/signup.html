@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Sign-Up Page</h2>
+        <form action="signup" method="post">
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" name="ID">
+
+            <label for="PW">PW:</label>
+            <input type="text" id="PW" name="PW">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <!--이메일 인증코드 전송-->
+            <button type="button" onclick="sendVerificationCode()">Send authentication code</button>
+
+            <label for="verificationCode">Authentication Code:</label>
+            <input type="text" id="verificationCode" name="verificationCode">
+            <!--인증 코드 확인-->
+            <button type="button" onclick="veriftCode()">Verifying the authentication code</button>
+            
+            <button type="submit">Sign-Up</button>
+        </form>
+        <div class="footer">Copyright</div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
