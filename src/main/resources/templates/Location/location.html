@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location of Food</title>
+    <link rel="stylesheet" href="css/location.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navigationbar">
+                <a href="index.html" class="navigationbar-bar">Menu</a>
+                <ul class="navigationbar-menu">
+                    <li class="navigationbar-sub"><a href="#" class="navigation-link">Sub 1</a></li>
+                    <li class="navigationbar-sub"><a href="#" class="navigation-link">Sub 2</a></li>
+                    <li class="navigationbar-sub"><a href="#" class="navigation-link">Sub 3</a></li>
+                    <li class="navigationbar-sub"><a href="#" class="navigation-link">Sub 4</a></li>                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="location-title" th:text="${location} + '의 음식점'"></h2>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <div id="places-list"></div>
+            <div id="places-detail" style="display: none;">
+                <h3 id="place-name"></h3>
+                <p id="place-address"></p>
+                <p id="place-number"></p>
+                <p id="place-menu"></p>
+            </div>
+        </main>
+    </div>
+    <script src="location.js"></script>
+</body>
+</html>
+
+
