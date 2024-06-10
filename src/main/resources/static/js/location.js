@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /*
     카카오 맵을 이용한 음식점 위치 검색
-    Kakao.init("bafce1a91ffcd9118ec0e1d7b47e8119"); //Insert Kakao App key & API 초기화
+    Kakao.init("Insert Kakao App key "); //API 초기화
     const mapContainer = document.getElementById("map");
     const mapOption = {
         center: new kakao.maps.LatLng(37.566535, 126.97796919999996), //초기 좌표 값 ->  바꿀 것
