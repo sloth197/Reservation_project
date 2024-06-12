@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login Page</h2>
+        <form action="login" method="post">
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" name="ID">
+            
+            <label for="PW">PW:</label>
+            <input type="text" id="PW" name="PW">
+            
+            <button type="submit">Login</button>
+            <button type="button" onclick="location.herf='signup.html'">Sign-Up</button>
+            <div id="kakao-login-btn"></div>
+            <button type="button" class="kakao-btn" onclick="kakaoLogin()">Login with Kakao</button>
+        </form>
+        <div class="footer">Copyright</div>
+    </div>
+
+    <!--카카오 로그인-->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init("bafce1a91ffcd9118ec0e1d7b47e8119"); //Insert Kakao App Key - > 암호화 할 것
+        
+        function kakaoLogin() {
+            Kaka.Auth.login({
+                success: function(authObj) {
+                    alert("로그인 성공" + JSON.stringify(authObj));
+                },
+                fail: function(err) {
+                    alert("로그인 오류" + JSON.stringify(err));
+                }
+            })
+        }
+        function kakaoLogout() {
+            if(Kakao.Auth.getAccessToken()) {
+                Kakao.Auth.logout(function() {
+                    alert("로그아웃 성공");
+                });
+            }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navigationbar-bar {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.navigationbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigationbar-sub {
+    margin: 0 15px;
+}
+
+.navigationbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navigationbar-link:hover {
+    text-decoration: underline;
+}
+
+.location-section, .login-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#places-list .place-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#places-list .place-item:hover {
+    background-color: #f0f0f0;
+}
+
+#places-detail {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
